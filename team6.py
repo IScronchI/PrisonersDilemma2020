@@ -24,6 +24,8 @@ def move(my_history, their_history, my_score, their_score):
     elif seas > bees: pattern = 'c'
     if recentbees > recentseas: recentpattern = 'b'
     elif recentseas > recentbees: recentpattern = 'c'
+    if seas == 0 and recentseas == 0:
+      return 'b'
     if pattern == 'b':
       return 'b'
     elif pattern == 'c':
