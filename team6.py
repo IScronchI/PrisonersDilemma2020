@@ -25,10 +25,7 @@ def move(my_history, their_history, my_score, their_score):
     if recentbees > recentseas: recentpattern = 'b'
     elif recentseas > recentbees: recentpattern = 'c'
     if pattern == 'b':
-      if recentpattern == 'b':
-        return 'b'
-      if recentpattern == 'c':
-        return 'c'
+      return 'b'
     elif pattern == 'c':
       return random.choice(choices)
     else: return random.choice(choices)
